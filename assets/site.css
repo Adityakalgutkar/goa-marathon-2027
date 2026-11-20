@@ -920,3 +920,11 @@ h1,h2,h3,p{margin:0}
 .brand-name{display:flex;flex-direction:column;line-height:1.05}
 .brand-name small{font-size:.5em;font-weight:700;letter-spacing:.02em;color:var(--leaf);margin-bottom:2px}
 .h1-sp{display:block;font-size:.36em;letter-spacing:-.01em;color:#c9e98a;margin-bottom:.12em}
+
+/* rules page: document content */
+.rules-h3{font-size:clamp(22px,2.2vw,28px);letter-spacing:-.02em;line-height:1.2;margin:56px 0 0;max-width:860px;color:var(--ink)}
+.rules-h3+.rules{margin-top:20px}
+.rules li ul{margin:10px 0 0;padding-left:20px;display:grid;gap:6px}
+.rules li ul li{list-style:disc;background:none;border:0;border-radius:0;padding:0;color:var(--copy)}
+.rules li ul li::before{content:none}
+@media (max-width:680px){.rules li{padding:18px 18px 18px 60px}.rules li::before{left:16px}}
