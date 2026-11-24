@@ -928,3 +928,16 @@ h1,h2,h3,p{margin:0}
 .rules li ul li{list-style:disc;background:none;border:0;border-radius:0;padding:0;color:var(--copy)}
 .rules li ul li::before{content:none}
 @media (max-width:680px){.rules li{padding:18px 18px 18px 60px}.rules li::before{left:16px}}
+
+/* race photos */
+.ph-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px;margin-top:36px}
+.ph-card{display:flex;flex-direction:column;justify-content:space-between;gap:24px;min-height:170px;padding:24px;border-radius:18px;background:var(--mist);border:1px solid var(--line);color:var(--ink);text-decoration:none;transition:transform .2s,background .2s}
+.ph-card b{font-size:clamp(40px,4vw,56px);line-height:1;letter-spacing:-.04em;color:var(--palm)}
+.ph-card span{font-weight:700;display:flex;justify-content:space-between}
+.ph-card:hover{transform:translateY(-3px);background:#e4eed6}
+.ph-latest{background:var(--red);border-color:var(--red);color:#fff}
+.ph-latest b{color:#fff}
+.ph-latest:hover{background:#b0262c}
+.ph-note{margin-top:16px;color:var(--copy);font-size:15px}
+@media (max-width:1000px){.ph-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:600px){.ph-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.ph-card{min-height:130px;padding:18px}}
