@@ -1,3 +1,26 @@
 {
-  "cleanUrls": true
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/about-us",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/marathon-details",
+      "destination": "/races",
+      "permanent": true
+    },
+    {
+      "source": "/rules-regulations",
+      "destination": "/rules",
+      "permanent": true
+    },
+    {
+      "source": "/home",
+      "destination": "/",
+      "permanent": true
+    }
+  ]
 }
